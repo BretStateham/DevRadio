@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Markdown Preview</title>
+<style>
+body{font-family:helvetica, arial, freesans, clean, sans-serif;color:#333;line-height:1.6;font-size:14px}.markdown-body{line-height:1.6;font-size:14px}.markdown-body > *:first-child{margin-top:0 !important}.markdown-body > *:last-child{margin-bottom:0 !important}.markdown-body a.absent{color:#c00}.markdown-body h1{font-weight:700;-webkit-font-smoothing:antialiased;color:#000;font-size:28px;margin:20px 0 10px;padding:0}.markdown-body h2{font-weight:700;-webkit-font-smoothing:antialiased;color:#000;font-size:24px;border-bottom-color:#ccc;border-bottom-width:1px;border-bottom-style:solid;margin:20px 0 10px;padding:0}.markdown-body h3{font-weight:700;-webkit-font-smoothing:antialiased;font-size:18px;margin:20px 0 10px;padding:0}.markdown-body h4{font-weight:700;-webkit-font-smoothing:antialiased;font-size:16px;margin:20px 0 10px;padding:0}.markdown-body h5{font-weight:700;-webkit-font-smoothing:antialiased;font-size:14px;margin:20px 0 10px;padding:0}.markdown-body h6{font-weight:700;-webkit-font-smoothing:antialiased;color:#777;font-size:14px;margin:20px 0 10px;padding:0}.markdown-body blockquote{color:#777;border-left-color:#ddd;border-left-width:4px;border-left-style:solid;margin:15px 0;padding:0 15px}.markdown-body dl{margin:15px 0;padding:0}.markdown-body table{border-collapse:collapse;margin:15px 0;padding:0}.markdown-body pre{border-radius:3px;border:1px solid #ccc;line-height:19px;overflow:auto;font-size:13px;background-color:#f8f8f8;margin:15px 0;padding:6px 10px}.markdown-body li p.first{display:inline-block}.markdown-body dl dt{font-size:14px;font-style:italic;font-weight:700;margin:15px 0 5px;padding:0}.markdown-body dl dt:first-child{padding:0}.markdown-body dl dd{margin:0 0 15px;padding:0 15px}.markdown-body table tr{border-top-color:#ccc;border-top-width:1px;border-top-style:solid;background-color:#fff;margin:0;padding:0}.markdown-body table tr:nth-child(2n){background-color:#f8f8f8}.markdown-body img{max-width:100%}.markdown-body span.frame{overflow:hidden;display:block}.markdown-body span.frame > span{border:1px solid #ddd;width:auto;overflow:hidden;float:left;display:block;margin:13px 0 0;padding:7px}.markdown-body span.frame span img{float:left;display:block}.markdown-body span.frame span span{color:#333;clear:both;display:block;padding:5px 0 0}.markdown-body span.align-center > span{text-align:center;overflow:hidden;display:block;margin:13px auto 0}.markdown-body span.align-center span img{text-align:center;margin:0 auto}.markdown-body span.align-right > span{text-align:right;overflow:hidden;display:block;margin:13px 0 0}.markdown-body span.align-right span img{text-align:right;margin:0}.markdown-body span.float-left{overflow:hidden;margin-right:13px;float:left;display:block}.markdown-body span.float-left span{margin:13px 0 0}.markdown-body span.float-right{overflow:hidden;margin-left:13px;float:right;display:block}.markdown-body span.float-right > span{text-align:right;overflow:hidden;display:block;margin:13px auto 0}.markdown-body pre > code{border:currentColor;white-space:pre;margin:0;padding:0}.markdown-body .highlight pre{border-radius:3px;border:1px solid #ccc;line-height:19px;overflow:auto;font-size:13px;background-color:#f8f8f8;padding:6px 10px}.markdown-body p,.markdown-body li{margin:15px 0}.markdown-body ul,.markdown-body ol{padding-left:30px;margin:15px 0}.markdown-body > h2:first-child,.markdown-body > h1:first-child,.markdown-body > h1:first-child + h2{border:0 currentColor;padding-top:0;margin-top:0}.markdown-body > h3:first-child,.markdown-body > h4:first-child,.markdown-body > h5:first-child,.markdown-body > h6:first-child{padding-top:0;margin-top:0}.markdown-body h1 + p,.markdown-body h2 + p,.markdown-body h3 + p,.markdown-body h4 + p,.markdown-body h5 + p,.markdown-body h6 + p,.markdown-body ul li > :first-child,.markdown-body ol li > :first-child,.markdown-body dl dt > :first-child,.markdown-body dl dd > :first-child,.markdown-body blockquote > :first-child,.markdown-body table tr th > :first-child,.markdown-body table tr td > :first-child{margin-top:0}.markdown-body ul li > :last-child,.markdown-body ol li > :last-child,.markdown-body dl dt > :last-child,.markdown-body dl dd > :last-child,.markdown-body blockquote > :last-child,.markdown-body table tr th > :last-child,.markdown-body table tr td > :last-child{margin-bottom:0}.markdown-body table tr th,.markdown-body table tr td{border:1px solid #ccc;text-align:left;margin:0;padding:6px 13px}.markdown-body span.align-center,.markdown-body span.align-right{overflow:hidden;clear:both;display:block}.markdown-body code,.markdown-body tt{border-radius:3px;border:1px solid #eaeaea;white-space:nowrap;background-color:#f8f8f8;margin:0 2px;padding:0 5px}.markdown-body pre code,.markdown-body pre tt{border:currentColor;background-color:transparent}span.codelanguage{display:none}
+</style>
+</head>
+<body>
+<div class="markdown-body">
+<p><a name="Top"></a></p>
+
+<h1 id="001_-_WAMS_Introduction">001 - WAMS Introduction</h1>
+
+<p>This demo introduces the viewer to Windows Azure Mobile Services.  We focus on the core of Windows Azure Services, independent of the client side SDK used.  To do that, we first create an Azure Mobile Service using the portal, then interact with it using the REST API from Fiddler.  </p>
+
+<p><a name="pre-requisites"></a></p>
+
+<h2 id="Pre-requisites">Pre-requisites</h2>
+
+<p>Developers wishing to follow the demo steps need:</p>
+
+<ul>
+<li>A Windows Azure Subscription</li>
+<li>Fiddler (<a href="http://fiddler2.com">http://fiddler2.com</a>)</li>
+</ul>
+
+<p><a name="steps"></a></p>
+
+<h2 id="Steps">Steps</h2>
+
+<ul>
+<li><a href="CreateWAMS">Create a Windows Azure Mobile Service</a></li>
+<li><a href="CreateTable">Create a table with open permissions</a></li>
+<li><a href="UseRest">Use fiddler to demo the REST API</a></li>
+<li><a href="UseRestWithKey">Use fiddler to demo the REST API with the Application Key</a></li>
+</ul>
+
+<p><a name="CreateWAMS"></a></p>
+
+<h3 id="Create_a_Windows_Azure_Mobile_Service">Create a Windows Azure Mobile Service</h3>
+
+<ul>
+<li>Open the <a href="https://manage.windowsazure.com">Windows Azure Management Portal</a> (<a href="https://manage.windowsazure.com">https://manage.windowsazure.com</a>)</li>
+<li><p>Create a new Windows Azure Mobile Service</p>
+
+<p><img src="images/10-new-azure-mobile-service.png?raw=true" alt="10 New Azure Mobile Service" title="New Azure Mobile Service">
+</p></li>
+<li><p>Give the Azure Mobile Service:</p>
+
+<ul>
+<li>Use a Unique URL</li>
+<li>Either use an Existing SQL Database, or choose to create a new one</li>
+<li>Pick an appropriate region</li>
+</ul>
+
+<p><img src="images/20-create-a-mobile-service.png?raw=true" alt="20 Create a Mobile Service" title="Create a Mobile Service">
+</p></li>
+<li><p>Create a new database on the selected server.  If you chose to create a new server provide appropriate administrative credentials and a region for the new Server.  Click the &quot;Check Mark&quot; button in the lower right corner to create the service.  </p>
+
+<p><img src="images/30---mobile-service-database.png?raw=true" alt="30 - Mobile Service Database" title="Mobile Service Database">
+</p></li>
+<li><p>Wait for the new mobile service to be created.  It shouldn't take more than one or two minutes.  </p>
+
+<p><img src="images/40-new-mobile-service-ready.png?raw=true" alt="40 New Mobile Service Ready" title="New Mobile Service Ready">
+</p></li>
+</ul>
+
+<p><a name="CreateTable"></a></p>
+
+<h3 id="Create_a_table_with_open_permissions">Create a table with open permissions</h3>
+
+<p><a name="UseRest"></a></p>
+
+<h3 id="Use_fiddler_to_demo_the_REST_API">Use fiddler to demo the REST API</h3>
+
+<p><a name="UseRestWithKey"></a></p>
+
+<h3 id="Use_fiddler_to_demo_the_REST_API_with_the_Application_Key">Use fiddler to demo the REST API with the Application Key</h3>
+
+</div>
+</body>
+</html>
