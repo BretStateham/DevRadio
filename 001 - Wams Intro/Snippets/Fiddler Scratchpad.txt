@@ -1,0 +1,123 @@
+==========================================================
+
+GET http://YOUR_MOBILE_SERVICE_NAME.azure-mobile.net/tables/DemoTable HTTP/1.1
+User-Agent: Fiddler
+Host: YOUR_MOBILE_SERVICE_NAME.azure-mobile.net
+
+==========================================================
+
+POST http://YOUR_MOBILE_SERVICE_NAME.azure-mobile.net/tables/DemoTable HTTP/1.1
+User-Agent: Fiddler
+Host: YOUR_MOBILE_SERVICE_NAME.azure-mobile.net
+Accept: application/json
+
+{
+  "firstName": "Bret",
+  "lastName": "Stateham"
+}
+
+
+==========================================================
+
+GET http://YOUR_MOBILE_SERVICE_NAME.azure-mobile.net/tables/DemoTable HTTP/1.1
+User-Agent: Fiddler
+Host: YOUR_MOBILE_SERVICE_NAME.azure-mobile.net
+Accept: application/json
+
+==========================================================
+
+POST http://YOUR_MOBILE_SERVICE_NAME.azure-mobile.net/tables/DemoTable HTTP/1.1
+User-Agent: Fiddler
+Host: YOUR_MOBILE_SERVICE_NAME.azure-mobile.net
+Accept: application/json
+
+{
+  "firstName": "Daniel",
+  "lastName": "Egan"
+}
+
+==========================================================
+
+POST http://YOUR_MOBILE_SERVICE_NAME.azure-mobile.net/tables/DemoTable HTTP/1.1
+User-Agent: Fiddler
+Host: YOUR_MOBILE_SERVICE_NAME.azure-mobile.net
+Accept: application/json
+
+{
+  "firstName": "Adam",
+  "lastName": "Tuliper"
+}
+
+==========================================================
+
+POST http://YOUR_MOBILE_SERVICE_NAME.azure-mobile.net/tables/DemoTable HTTP/1.1
+User-Agent: Fiddler
+Host: YOUR_MOBILE_SERVICE_NAME.azure-mobile.net
+Accept: application/json
+
+{
+  "firstName": "Bruno",
+  "lastName": "Terkaly"
+}
+
+==========================================================
+
+GET http://YOUR_MOBILE_SERVICE_NAME.azure-mobile.net/tables/DemoTable HTTP/1.1
+User-Agent: Fiddler
+Host: YOUR_MOBILE_SERVICE_NAME.azure-mobile.net
+Accept: application/json
+
+==========================================================
+
+GET http://YOUR_MOBILE_SERVICE_NAME.azure-mobile.net/tables/DemoTable?$filter=(firstName%20eq%20'Bret') HTTP/1.1
+User-Agent: Fiddler
+Host: YOUR_MOBILE_SERVICE_NAME.azure-mobile.net
+Accept: application/json
+
+==========================================================
+
+PATCH http://YOUR_MOBILE_SERVICE_NAME.azure-mobile.net/tables/DemoTable/BRETS_RECORD_ID_GUID HTTP/1.1
+User-Agent: Fiddler
+Host: YOUR_MOBILE_SERVICE_NAME.azure-mobile.net
+Accept: application/json
+
+{
+  "firstName": "Brett"
+}
+
+==========================================================
+
+GET http://YOUR_MOBILE_SERVICE_NAME.azure-mobile.net/tables/DemoTable/BRETS_RECORD_ID_GUID HTTP/1.1
+User-Agent: Fiddler
+Host: YOUR_MOBILE_SERVICE_NAME.azure-mobile.net
+Accept: application/json
+
+==========================================================
+
+DELETE http://YOUR_MOBILE_SERVICE_NAME.azure-mobile.net/tables/DemoTable/BRETS_RECORD_ID_GUID HTTP/1.1
+User-Agent: Fiddler
+Host: YOUR_MOBILE_SERVICE_NAME.azure-mobile.net
+Accept: application/json
+
+==========================================================
+
+GET http://YOUR_MOBILE_SERVICE_NAME.azure-mobile.net/tables/DemoTable/BRETS_RECORD_ID_GUID HTTP/1.1
+User-Agent: Fiddler
+Host: YOUR_MOBILE_SERVICE_NAME.azure-mobile.net
+Accept: application/json
+
+==========================================================
+
+GET http://YOUR_MOBILE_SERVICE_NAME.azure-mobile.net/tables/DemoTable HTTP/1.1
+User-Agent: Fiddler
+Host: YOUR_MOBILE_SERVICE_NAME.azure-mobile.net
+Accept: application/json
+
+==========================================================
+
+GET http://YOUR_MOBILE_SERVICE_NAME.azure-mobile.net/tables/DemoTable HTTP/1.1
+User-Agent: Fiddler
+Host: YOUR_MOBILE_SERVICE_NAME.azure-mobile.net
+Accept: application/json
+X-ZUMO-APPLICATION: PASTE_YOUR_KEY_HERE
+
