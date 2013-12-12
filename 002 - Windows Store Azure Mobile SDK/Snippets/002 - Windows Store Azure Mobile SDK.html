@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Markdown Preview</title>
+<style>
+body{font-family:helvetica, arial, freesans, clean, sans-serif;color:#333;line-height:1.6;font-size:14px}.markdown-body{line-height:1.6;font-size:14px}.markdown-body > *:first-child{margin-top:0 !important}.markdown-body > *:last-child{margin-bottom:0 !important}.markdown-body a.absent{color:#c00}.markdown-body h1{font-weight:700;-webkit-font-smoothing:antialiased;color:#000;font-size:28px;margin:20px 0 10px;padding:0}.markdown-body h2{font-weight:700;-webkit-font-smoothing:antialiased;color:#000;font-size:24px;border-bottom-color:#ccc;border-bottom-width:1px;border-bottom-style:solid;margin:20px 0 10px;padding:0}.markdown-body h3{font-weight:700;-webkit-font-smoothing:antialiased;font-size:18px;margin:20px 0 10px;padding:0}.markdown-body h4{font-weight:700;-webkit-font-smoothing:antialiased;font-size:16px;margin:20px 0 10px;padding:0}.markdown-body h5{font-weight:700;-webkit-font-smoothing:antialiased;font-size:14px;margin:20px 0 10px;padding:0}.markdown-body h6{font-weight:700;-webkit-font-smoothing:antialiased;color:#777;font-size:14px;margin:20px 0 10px;padding:0}.markdown-body blockquote{color:#777;border-left-color:#ddd;border-left-width:4px;border-left-style:solid;margin:15px 0;padding:0 15px}.markdown-body dl{margin:15px 0;padding:0}.markdown-body table{border-collapse:collapse;margin:15px 0;padding:0}.markdown-body pre{border-radius:3px;border:1px solid #ccc;line-height:19px;overflow:auto;font-size:13px;background-color:#f8f8f8;margin:15px 0;padding:6px 10px}.markdown-body li p.first{display:inline-block}.markdown-body dl dt{font-size:14px;font-style:italic;font-weight:700;margin:15px 0 5px;padding:0}.markdown-body dl dt:first-child{padding:0}.markdown-body dl dd{margin:0 0 15px;padding:0 15px}.markdown-body table tr{border-top-color:#ccc;border-top-width:1px;border-top-style:solid;background-color:#fff;margin:0;padding:0}.markdown-body table tr:nth-child(2n){background-color:#f8f8f8}.markdown-body img{max-width:100%}.markdown-body span.frame{overflow:hidden;display:block}.markdown-body span.frame > span{border:1px solid #ddd;width:auto;overflow:hidden;float:left;display:block;margin:13px 0 0;padding:7px}.markdown-body span.frame span img{float:left;display:block}.markdown-body span.frame span span{color:#333;clear:both;display:block;padding:5px 0 0}.markdown-body span.align-center > span{text-align:center;overflow:hidden;display:block;margin:13px auto 0}.markdown-body span.align-center span img{text-align:center;margin:0 auto}.markdown-body span.align-right > span{text-align:right;overflow:hidden;display:block;margin:13px 0 0}.markdown-body span.align-right span img{text-align:right;margin:0}.markdown-body span.float-left{overflow:hidden;margin-right:13px;float:left;display:block}.markdown-body span.float-left span{margin:13px 0 0}.markdown-body span.float-right{overflow:hidden;margin-left:13px;float:right;display:block}.markdown-body span.float-right > span{text-align:right;overflow:hidden;display:block;margin:13px auto 0}.markdown-body pre > code{border:currentColor;white-space:pre;margin:0;padding:0}.markdown-body .highlight pre{border-radius:3px;border:1px solid #ccc;line-height:19px;overflow:auto;font-size:13px;background-color:#f8f8f8;padding:6px 10px}.markdown-body p,.markdown-body li{margin:15px 0}.markdown-body ul,.markdown-body ol{padding-left:30px;margin:15px 0}.markdown-body > h2:first-child,.markdown-body > h1:first-child,.markdown-body > h1:first-child + h2{border:0 currentColor;padding-top:0;margin-top:0}.markdown-body > h3:first-child,.markdown-body > h4:first-child,.markdown-body > h5:first-child,.markdown-body > h6:first-child{padding-top:0;margin-top:0}.markdown-body h1 + p,.markdown-body h2 + p,.markdown-body h3 + p,.markdown-body h4 + p,.markdown-body h5 + p,.markdown-body h6 + p,.markdown-body ul li > :first-child,.markdown-body ol li > :first-child,.markdown-body dl dt > :first-child,.markdown-body dl dd > :first-child,.markdown-body blockquote > :first-child,.markdown-body table tr th > :first-child,.markdown-body table tr td > :first-child{margin-top:0}.markdown-body ul li > :last-child,.markdown-body ol li > :last-child,.markdown-body dl dt > :last-child,.markdown-body dl dd > :last-child,.markdown-body blockquote > :last-child,.markdown-body table tr th > :last-child,.markdown-body table tr td > :last-child{margin-bottom:0}.markdown-body table tr th,.markdown-body table tr td{border:1px solid #ccc;text-align:left;margin:0;padding:6px 13px}.markdown-body span.align-center,.markdown-body span.align-right{overflow:hidden;clear:both;display:block}.markdown-body code,.markdown-body tt{border-radius:3px;border:1px solid #eaeaea;white-space:nowrap;background-color:#f8f8f8;margin:0 2px;padding:0 5px}.markdown-body pre code,.markdown-body pre tt{border:currentColor;background-color:transparent}span.codelanguage{display:none}
+</style>
+</head>
+<body>
+<div class="markdown-body">
+<p><a name="Top"></a></p>
+
+<h1 id="002_-_Windows_STore_Azure_Mobile_SDK">002 - Windows STore Azure Mobile SDK</h1>
+
+<p>This demo introduces the viewer to Windows Azure Mobile Services SDK for Windows Store applications.  We'll use the Mobile Service, table, and data from the previous demo (001 - WAMS Intro), and consume it from a Windows Store C#/XAML applications.   </p>
+
+<p><a name="prerequisites"></a></p>
+
+<h2 id="Prerequisites">Prerequisites</h2>
+
+<p>Developers wishing to follow the demo steps need:</p>
+
+<ul>
+<li>A Windows Azure Subscription - <a href="http://aka.ms/az30">Sign Up for a Free Trial</a></li>
+<li>Visual Studio 2013 (Express for Windows 8 should work) - <a href="http://www.visualstudio.com/downloads/download-visual-studio-vs">Download</a></li>
+<li>Mobile Service, DemoTable, and Data created in the &quot;001 - WAMS Intro&quot; demo.</li>
+</ul>
+
+<p><a name="resources"></a></p>
+
+<h2 id="Resources">Resources</h2>
+
+<ul>
+<li><a href="http://github.com/BretStateham/DevRadio">Bret's DevRadio Demos on GitHub</a></li>
+<li><a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj554228.aspx">Azure Mobile Services Documentation</a></li>
+<li><a href="http://msdn.microsoft.com/en-us/library/windowsazure/jj863454.aspx">Azure Mobile Services Client Library for .NET Documentation</a></li>
+<li><a href="http://BretStateham.com">Bret's Blog</a>(<a href="http://BretStateham.com">http://BretStateham.com</a>)</li>
+<li><a href="http://youtube.com/BStateham">Bret's YouTube Channel</a></li>
+</ul>
+
+<p><a name="steps"></a></p>
+
+<h2 id="Steps">Steps</h2>
+
+<ul>
+<li><a href="ReviewService">Review Mobile Service from Previous Demo</a></li>
+<li><a href="CreateWinStoreProject">Create Windows Store Project</a></li>
+<li><a href="AddAppUI">Add App UI</a></li>
+<li><a href="AddSDK">Add Mobile Services SDK</a></li>
+<li><a href="ImplementApp">Implement App</a></li>
+</ul>
+
+<hr>
+
+<p><a name="ReviewService"></a></p>
+
+<h3 id="Review_Mobile_Service_from_Previous_Demo">Review Mobile Service from Previous Demo</h3>
+
+<ul>
+<li><p>In the <a href="https://manage.windowsazure.com"><strong>&quot;Windows Azure Management Portal&quot;</strong></a>(<a href="https://manage.windowsazure.com">https://manage.windowsazure.com</a>), open the <strong>Mobile Service</strong> that was created in the &quot;001 - WAMS Intro&quot; demo</p></li>
+<li><p>Review the <strong>&quot;DemoTable&quot;</strong> table, it's columns (<strong>&quot;Id&quot;</strong>, <strong>&quot;firstName&quot;</strong> and <strong>&quot;lastName&quot;</strong>, ...) and the existing data in it. </p></li>
+<li><p>Review the permissions on the DemoTable (they should all be set to &quot;Anybody with the Application Key&quot;</p></li>
+</ul>
+
+<hr>
+
+<p><a name="CreateWinStoreProject"></a></p>
+
+<h3 id="Create_Windows_Store_Project">Create Windows Store Project</h3>
+
+<ul>
+<li>Open <strong>Visual Studio 2013</strong></li>
+<li><p>Create a new C# Windows Store Project. Using the Following:</p>
+
+<ul>
+<li>Template: <strong>&quot;Installed&quot;</strong> | <strong>&quot;Templates&quot;</strong> | <strong>&quot;Visual C#&quot;</strong> | <strong>&quot;Windows Store&quot;</strong> | <strong>&quot;Blank App (XAML)&quot;</strong></li>
+<li>Name: <strong>WAMSClients.WinStoreCS</strong></li>
+<li>Location: <strong>&quot;Before&quot;</strong> Folder for this demo</li>
+<li>Solution name: <strong>&quot;WAMSClients&quot;</strong></li>
+</ul>
+
+<p><img src="images/010-new-windows-store-project.png?raw=true" alt="New Windows Store Project" title="New Windows Store Project">
+</p></li>
+</ul>
+
+<hr>
+
+<p><a name="AddAppUI"></a></p>
+
+<h3 id="Add_App_UI">Add App UI</h3>
+
+<ul>
+<li>In the new Windows Store application, open MainPage.xaml, and replace the contents of the page (exclucing the <strong>&lt;Page&gt;&lt;/Page&gt;</strong> element itself to the following:</li>
+</ul>
+
+<span class="codelanguage">XML</span><pre><code class="XML"><span style="color:#0000FF">&lt;</span><span style="color:#800000">Grid</span> <span style="color:#FF0000">Background</span>=<span style="color:#0000FF">&quot;{ThemeResource ApplicationPageBackgroundThemeBrush}&quot;</span><span style="color:#0000FF">&gt;</span>
+  <span style="color:#0000FF">&lt;</span><span style="color:#800000">Grid.ColumnDefinitions</span><span style="color:#0000FF">&gt;</span>
+    <span style="color:#0000FF">&lt;</span><span style="color:#800000">ColumnDefinition</span> <span style="color:#FF0000">Width</span>=<span style="color:#0000FF">&quot;140&quot;</span><span style="color:#0000FF">/&gt;</span>
+    <span style="color:#0000FF">&lt;</span><span style="color:#800000">ColumnDefinition</span> <span style="color:#FF0000">Width</span>=<span style="color:#0000FF">&quot;*&quot;</span><span style="color:#0000FF">/&gt;</span>
+  <span style="color:#0000FF">&lt;/</span><span style="color:#800000">Grid.ColumnDefinitions</span><span style="color:#0000FF">&gt;</span>
+  <span style="color:#0000FF">&lt;</span><span style="color:#800000">Grid.RowDefinitions</span><span style="color:#0000FF">&gt;</span>
+    <span style="color:#0000FF">&lt;</span><span style="color:#800000">RowDefinition</span> <span style="color:#FF0000">Height</span>=<span style="color:#0000FF">&quot;120&quot;</span><span style="color:#0000FF">/&gt;</span>
+    <span style="color:#0000FF">&lt;</span><span style="color:#800000">RowDefinition</span> <span style="color:#FF0000">Height</span>=<span style="color:#0000FF">&quot;*&quot;</span><span style="color:#0000FF">/&gt;</span>
+  <span style="color:#0000FF">&lt;/</span><span style="color:#800000">Grid.RowDefinitions</span><span style="color:#0000FF">&gt;</span>
+  <span style="color:#0000FF">&lt;</span><span style="color:#800000">TextBlock</span> <span style="color:#FF0000">Grid</span>.<span style="color:#FF0000">Column</span>=<span style="color:#0000FF">&quot;1&quot;</span> <span style="color:#FF0000">Text</span>=<span style="color:#0000FF">&quot;Windows Store WAMS Client Demo&quot;</span> <span style="color:#FF0000">VerticalAlignment</span>=<span style="color:#0000FF">&quot;Center&quot;</span> <span style="color:#FF0000">HorizontalAlignment</span>=<span style="color:#0000FF">&quot;Left&quot;</span> <span style="color:#FF0000">Margin</span>=<span style="color:#0000FF">&quot;10,0,0,0&quot;</span> <span style="color:#FF0000">Style</span>=<span style="color:#0000FF">&quot;{StaticResource HeaderTextBlockStyle}&quot;</span><span style="color:#0000FF">/&gt;</span>
+  <span style="color:#0000FF">&lt;</span><span style="color:#800000">Grid</span> <span style="color:#FF0000">Grid</span>.<span style="color:#FF0000">Row</span>=<span style="color:#0000FF">&quot;1&quot;</span> <span style="color:#FF0000">Grid</span>.<span style="color:#FF0000">Column</span>=<span style="color:#0000FF">&quot;1&quot;</span><span style="color:#0000FF">&gt;</span>
+    <span style="color:#0000FF">&lt;</span><span style="color:#800000">Grid.ColumnDefinitions</span><span style="color:#0000FF">&gt;</span>
+      <span style="color:#0000FF">&lt;</span><span style="color:#800000">ColumnDefinition</span> <span style="color:#0000FF">/&gt;</span>
+      <span style="color:#0000FF">&lt;</span><span style="color:#800000">ColumnDefinition</span> <span style="color:#0000FF">/&gt;</span>
+    <span style="color:#0000FF">&lt;/</span><span style="color:#800000">Grid.ColumnDefinitions</span><span style="color:#0000FF">&gt;</span>
+
+    <span style="color:#0000FF">&lt;</span><span style="color:#800000">Grid</span> <span style="color:#FF0000">x</span>:<span style="color:#FF0000">Name</span>=<span style="color:#0000FF">&quot;FormGrid&quot;</span> <span style="color:#FF0000">Grid</span>.<span style="color:#FF0000">Column</span>=<span style="color:#0000FF">&quot;0&quot;</span><span style="color:#0000FF">&gt;</span>
+      <span style="color:#0000FF">&lt;</span><span style="color:#800000">Grid.ColumnDefinitions</span><span style="color:#0000FF">&gt;</span>
+
+        <span style="color:#0000FF">&lt;</span><span style="color:#800000">ColumnDefinition</span> <span style="color:#FF0000">Width</span>=<span style="color:#0000FF">&quot;2*&quot;</span><span style="color:#0000FF">/&gt;</span>
+        <span style="color:#0000FF">&lt;</span><span style="color:#800000">ColumnDefinition</span> <span style="color:#FF0000">Width</span>=<span style="color:#0000FF">&quot;3*&quot;</span><span style="color:#0000FF">/&gt;</span>
+      <span style="color:#0000FF">&lt;/</span><span style="color:#800000">Grid.ColumnDefinitions</span><span style="color:#0000FF">&gt;</span>
+      <span style="color:#0000FF">&lt;</span><span style="color:#800000">Grid.RowDefinitions</span><span style="color:#0000FF">&gt;</span>
+        <span style="color:#0000FF">&lt;</span><span style="color:#800000">RowDefinition</span> <span style="color:#FF0000">Height</span>=<span style="color:#0000FF">&quot;75&quot;</span> <span style="color:#0000FF">/&gt;</span>
+        <span style="color:#0000FF">&lt;</span><span style="color:#800000">RowDefinition</span> <span style="color:#FF0000">Height</span>=<span style="color:#0000FF">&quot;75&quot;</span> <span style="color:#0000FF">/&gt;</span>
+        <span style="color:#0000FF">&lt;</span><span style="color:#800000">RowDefinition</span> <span style="color:#FF0000">Height</span>=<span style="color:#0000FF">&quot;75&quot;</span> <span style="color:#0000FF">/&gt;</span>
+        <span style="color:#0000FF">&lt;</span><span style="color:#800000">RowDefinition</span> <span style="color:#FF0000">Height</span>=<span style="color:#0000FF">&quot;*&quot;</span> <span style="color:#0000FF">/&gt;</span>
+      <span style="color:#0000FF">&lt;/</span><span style="color:#800000">Grid.RowDefinitions</span><span style="color:#0000FF">&gt;</span>
+
+      <span style="color:#0000FF">&lt;</span><span style="color:#800000">TextBlock</span> <span style="color:#FF0000">Text</span>=<span style="color:#0000FF">&quot;First Name:&quot;</span> <span style="color:#FF0000">FontSize</span>=<span style="color:#0000FF">&quot;32&quot;</span> <span style="color:#FF0000">Grid</span>.<span style="color:#FF0000">Row</span>=<span style="color:#0000FF">&quot;0&quot;</span> <span style="color:#FF0000">Grid</span>.<span style="color:#FF0000">Column</span>=<span style="color:#0000FF">&quot;0&quot;</span> <span style="color:#FF0000">VerticalAlignment</span>=<span style="color:#0000FF">&quot;Center&quot;</span> <span style="color:#FF0000">HorizontalAlignment</span>=<span style="color:#0000FF">&quot;Left&quot;</span> <span style="color:#0000FF">/&gt;</span>
+      <span style="color:#0000FF">&lt;</span><span style="color:#800000">TextBox</span> <span style="color:#FF0000">x</span>:<span style="color:#FF0000">Name</span>=<span style="color:#0000FF">&quot;FirstNameTextBox&quot;</span> <span style="color:#FF0000">Text</span>=<span style="color:#0000FF">&quot;&quot;</span> <span style="color:#FF0000">FontSize</span>=<span style="color:#0000FF">&quot;32&quot;</span> <span style="color:#FF0000">Grid</span>.<span style="color:#FF0000">Row</span>=<span style="color:#0000FF">&quot;0&quot;</span> <span style="color:#FF0000">Grid</span>.<span style="color:#FF0000">Column</span>=<span style="color:#0000FF">&quot;1&quot;</span> <span style="color:#FF0000">TextAlignment</span>=<span style="color:#0000FF">&quot;Left&quot;</span> <span style="color:#FF0000">Margin</span>=<span style="color:#0000FF">&quot;4&quot;</span> <span style="color:#0000FF">/&gt;</span>
+
+      <span style="color:#0000FF">&lt;</span><span style="color:#800000">TextBlock</span> <span style="color:#FF0000">Text</span>=<span style="color:#0000FF">&quot;Last Name:&quot;</span> <span style="color:#FF0000">FontSize</span>=<span style="color:#0000FF">&quot;32&quot;</span> <span style="color:#FF0000">Grid</span>.<span style="color:#FF0000">Row</span>=<span style="color:#0000FF">&quot;1&quot;</span> <span style="color:#FF0000">Grid</span>.<span style="color:#FF0000">Column</span>=<span style="color:#0000FF">&quot;0&quot;</span> <span style="color:#FF0000">VerticalAlignment</span>=<span style="color:#0000FF">&quot;Center&quot;</span> <span style="color:#FF0000">HorizontalAlignment</span>=<span style="color:#0000FF">&quot;Left&quot;</span> <span style="color:#0000FF">/&gt;</span>
+      <span style="color:#0000FF">&lt;</span><span style="color:#800000">TextBox</span> <span style="color:#FF0000">x</span>:<span style="color:#FF0000">Name</span>=<span style="color:#0000FF">&quot;LastNameTextBox&quot;</span> <span style="color:#FF0000">Text</span>=<span style="color:#0000FF">&quot;&quot;</span> <span style="color:#FF0000">FontSize</span>=<span style="color:#0000FF">&quot;32&quot;</span> <span style="color:#FF0000">Grid</span>.<span style="color:#FF0000">Row</span>=<span style="color:#0000FF">&quot;1&quot;</span> <span style="color:#FF0000">Grid</span>.<span style="color:#FF0000">Column</span>=<span style="color:#0000FF">&quot;1&quot;</span> <span style="color:#FF0000">TextAlignment</span>=<span style="color:#0000FF">&quot;Left&quot;</span> <span style="color:#FF0000">Margin</span>=<span style="color:#0000FF">&quot;4&quot;</span> <span style="color:#0000FF">/&gt;</span>
+
+      <span style="color:#0000FF">&lt;</span><span style="color:#800000">Button</span> <span style="color:#FF0000">x</span>:<span style="color:#FF0000">Name</span>=<span style="color:#0000FF">&quot;InsertButton&quot;</span> <span style="color:#FF0000">Grid</span>.<span style="color:#FF0000">Row</span>=<span style="color:#0000FF">&quot;2&quot;</span> <span style="color:#FF0000">Grid</span>.<span style="color:#FF0000">Column</span>=<span style="color:#0000FF">&quot;1&quot;</span> <span style="color:#FF0000">Content</span>=<span style="color:#0000FF">&quot;Insert&quot;</span> <span style="color:#FF0000">FontSize</span>=<span style="color:#0000FF">&quot;32&quot;</span> <span style="color:#FF0000">HorizontalAlignment</span>=<span style="color:#0000FF">&quot;Stretch&quot;</span> <span style="color:#FF0000">VerticalAlignment</span>=<span style="color:#0000FF">&quot;Stretch&quot;</span> <span style="color:#FF0000">Margin</span>=<span style="color:#0000FF">&quot;4&quot;</span> <span style="color:#0000FF">/&gt;</span>
+
+      <span style="color:#0000FF">&lt;</span><span style="color:#800000">Button</span> <span style="color:#FF0000">x</span>:<span style="color:#FF0000">Name</span>=<span style="color:#0000FF">&quot;RefreshButton&quot;</span> <span style="color:#FF0000">Grid</span>.<span style="color:#FF0000">Row</span>=<span style="color:#0000FF">&quot;3&quot;</span> <span style="color:#FF0000">Grid</span>.<span style="color:#FF0000">Column</span>=<span style="color:#0000FF">&quot;0&quot;</span> <span style="color:#FF0000">Grid</span>.<span style="color:#FF0000">ColumnSpan</span>=<span style="color:#0000FF">&quot;2&quot;</span> <span style="color:#FF0000">Content</span>=<span style="color:#0000FF">&quot;RefreshData&quot;</span> <span style="color:#FF0000">FontSize</span>=<span style="color:#0000FF">&quot;32&quot;</span> <span style="color:#FF0000">HorizontalAlignment</span>=<span style="color:#0000FF">&quot;Stretch&quot;</span> <span style="color:#FF0000">Height</span>=<span style="color:#0000FF">&quot;200&quot;</span> <span style="color:#0000FF">/&gt;</span>
+
+    <span style="color:#0000FF">&lt;/</span><span style="color:#800000">Grid</span><span style="color:#0000FF">&gt;</span>
+
+    <span style="color:#0000FF">&lt;</span><span style="color:#800000">ListView</span> <span style="color:#FF0000">x</span>:<span style="color:#FF0000">Name</span>=<span style="color:#0000FF">&quot;DemoTableListView&quot;</span> <span style="color:#FF0000">Grid</span>.<span style="color:#FF0000">Column</span>=<span style="color:#0000FF">&quot;1&quot;</span> <span style="color:#FF0000">Margin</span>=<span style="color:#0000FF">&quot;4&quot;</span><span style="color:#0000FF">&gt;</span>
+      <span style="color:#0000FF">&lt;</span><span style="color:#800000">ListView.ItemTemplate</span><span style="color:#0000FF">&gt;</span>
+        <span style="color:#0000FF">&lt;</span><span style="color:#800000">DataTemplate</span><span style="color:#0000FF">&gt;</span>
+          <span style="color:#0000FF">&lt;</span><span style="color:#800000">StackPanel</span> <span style="color:#FF0000">Margin</span>=<span style="color:#0000FF">&quot;10&quot;</span><span style="color:#0000FF">&gt;</span>
+            <span style="color:#0000FF">&lt;</span><span style="color:#800000">TextBlock</span> <span style="color:#FF0000">Text</span>=<span style="color:#0000FF">&quot;{Binding FirstName}&quot;</span> <span style="color:#FF0000">FontSize</span>=<span style="color:#0000FF">&quot;18&quot;</span> <span style="color:#FF0000">Margin</span>=<span style="color:#0000FF">&quot;4&quot;</span> <span style="color:#0000FF">/&gt;</span>
+            <span style="color:#0000FF">&lt;</span><span style="color:#800000">TextBlock</span> <span style="color:#FF0000">Text</span>=<span style="color:#0000FF">&quot;{Binding LastName}&quot;</span> <span style="color:#FF0000">FontSize</span>=<span style="color:#0000FF">&quot;18&quot;</span> <span style="color:#FF0000">Margin</span>=<span style="color:#0000FF">&quot;4&quot;</span> <span style="color:#0000FF">/&gt;</span>          <span style="color:#0000FF">&lt;/</span><span style="color:#800000">StackPanel</span><span style="color:#0000FF">&gt;</span>
+        <span style="color:#0000FF">&lt;/</span><span style="color:#800000">DataTemplate</span><span style="color:#0000FF">&gt;</span>
+      <span style="color:#0000FF">&lt;/</span><span style="color:#800000">ListView.ItemTemplate</span><span style="color:#0000FF">&gt;</span>
+    <span style="color:#0000FF">&lt;/</span><span style="color:#800000">ListView</span><span style="color:#0000FF">&gt;</span>
+
+      <span style="color:#0000FF">&lt;</span><span style="color:#800000">ProgressRing</span> <span style="color:#FF0000">x</span>:<span style="color:#FF0000">Name</span>=<span style="color:#0000FF">&quot;LoadingDataRing&quot;</span> <span style="color:#FF0000">Grid</span>.<span style="color:#FF0000">Column</span>=<span style="color:#0000FF">&quot;1&quot;</span> <span style="color:#FF0000">HorizontalAlignment</span>=<span style="color:#0000FF">&quot;Center&quot;</span> <span style="color:#FF0000">VerticalAlignment</span>=<span style="color:#0000FF">&quot;Center&quot;</span> <span style="color:#FF0000">Width</span>=<span style="color:#0000FF">&quot;200&quot;</span> <span style="color:#FF0000">Height</span>=<span style="color:#0000FF">&quot;200&quot;</span> <span style="color:#0000FF">/&gt;</span>
+
+  <span style="color:#0000FF">&lt;/</span><span style="color:#800000">Grid</span><span style="color:#0000FF">&gt;</span>
+<span style="color:#0000FF">&lt;/</span><span style="color:#800000">Grid</span><span style="color:#0000FF">&gt;</span>
+</code></pre>
+
+<ul>
+<li><p>The resulting UI for MainPage.xaml should look like this:</p>
+
+<p><img src="images/20-mainpage-ui.png?raw=true" alt="MainPage UI" title="MainPage UI">
+</p></li>
+</ul>
+
+<hr>
+
+<p><a name="AddSDK"></a></p>
+
+<h3 id="Add_Mobile_Services_SDK">Add Mobile Services SDK</h3>
+
+<ul>
+<li><p>In the <strong>&quot;Visual Studio&quot;</strong> <strong>&quot;Solution Explorer&quot;</strong> window, <strong>right-click</strong> the <strong>&quot;WAMSClients.WinStoreCS&quot;</strong> project and select <strong>&quot;Manage NuGet Packages...&quot;</strong> from the pop-up menu:</p>
+
+<p><img src="images/30-manage-nuget-packages.png?raw=true" alt="Manage NuGet Packages" title="Manage NuGet Packages">
+</p></li>
+<li><p>In the <strong>&quot;WAMSClients.WinStoreCS - Manage NuGet Packages&quot;</strong> window:</p>
+
+<ul>
+<li>Select <strong>&quot;Online&quot;</strong> | <strong>&quot;nuget.org&quot;</strong> on the left side</li>
+<li>Type <strong>&quot;Windows Azure Mobile Services&quot;</strong> into the search box in the top right corner</li>
+<li>On the <strong>&quot;Windows Azure Mobile Services&quot;</strong> item in the search results, click the <strong>&quot;Install&quot;</strong> button</li>
+</ul>
+
+<p><img src="images/40-install-wams-sdk.png?raw=true" alt="Install WAMS SDK" title="Install WAMS SDK">
+</p></li>
+<li><p>On the <strong>&quot;License Acceptance&quot;</strong> window, click <strong>&quot;I Accept&quot;</strong>:</p>
+
+<p><img src="images/50-license-acceptance.png?raw=true" alt="License Acceptance" title="License Acceptance">
+</p></li>
+<li><p>When the installation is complete, click the <strong>&quot;Close&quot;</strong> button on the &quot;WAMSClients.WinStoreCS Manage NuGet Packages&quot; window:</p>
+
+<p><img src="images/60-close-manage-nuget-packages-window.png?raw=true" alt="Close Manage NuGet Packages Window" title="Close Manage NuGet Packages Window">
+</p></li>
+</ul>
+
+<hr>
+
+<p><a name="ImplementApp"></a></p>
+
+<h3 id="Implement_App">Implement App</h3>
+
+<ul>
+<li>First, we'll add a MobileServicesClient object to the App so we can use it throughout the application.<br></li>
+<li><p>In the management portal:</p>
+
+<ul>
+<li>Open the &quot;Quickstart&quot; page for your mobile service.<br></li>
+<li>Next to <strong>&quot;CHOOSE A PLATFORM&quot;</strong> click on <strong>&quot;Windows Store&quot;</strong> </li>
+<li>Under <strong>&quot;Connect your app&quot;</strong>, for <strong>&quot;LANGUAGE&quot;</strong> select <strong>&quot;C#&quot;</strong></li>
+<li>Click the <strong>&quot;Copy Icon&quot;</strong> to copy the code to the clipboard. </li>
+<li>If IE prompts you to allow access to the clipboard click <strong>&quot;Allow access&quot;</strong></li>
+</ul>
+
+<p><img src="images/70-copy-code-for-mobile-service-client.png?raw=true" alt="Copy Code for Mobile Service Client" title="Copy Code for Mobile Service Client">
+</p></li>
+<li><p>Notice that the copied code already has the propert URL for the mobile service api endpoint, as well as the Application Key for the mobile service.  </p></li>
+<li><p>Open the App.xaml.cs code file in Visual Studio.  Add the following using directive to the top of the code file:</p></li>
+</ul>
+
+<span class="codelanguage">C#</span><pre><code class="C#"><span style="color:#0000FF">using</span> Microsoft.WindowsAzure.MobileServices;
+</code></pre>
+
+<ul>
+<li>Then inside the App class definition, paste the code you copied from the mobile service quickstart page (If you copy the code below, you will need to fix the URL and application key):</li>
+</ul>
+
+<span class="codelanguage">C#</span><pre><code class="C#"><span style="color:#0000FF">public</span> <span style="color:#0000FF">static</span> MobileServiceClient MobileService = <span style="color:#0000FF">new</span> MobileServiceClient(
+  <span style="color:#8B0000">&quot;https://YOUR_MOBILE_SERVICE_NAME.azure-mobile.net/&quot;</span>,
+  <span style="color:#8B0000">&quot;YOUR_MOBILE_SERVICE_APPLICATION_KEY&quot;</span>
+);
+</code></pre>
+
+<ul>
+<li><p>In the Solution Explorer, right click the WAMSClients.WinStoreCS project.  Select &quot;Add&quot; | &quot;Class...&quot; from the pop-up menu. </p></li>
+<li><p>Name the new class &quot;DemoTable.cs&quot;</p></li>
+<li><p>Paste the following code in for the class:</p></li>
+</ul>
+
+<span class="codelanguage">C#</span><pre><code class="C#"><span style="color:#0000FF">namespace</span> WAMSClients.WinStoreCS
+{
+  <span style="color:#0000FF">public</span> <span style="color:#0000FF">class</span> DemoTable
+  {
+    <span style="color:#0000FF">public</span> <span style="color:#0000FF">string</span> Id { <span style="color:#0000FF">get</span>; <span style="color:#0000FF">set</span>; }
+
+    <span style="color:#0000FF">public</span> <span style="color:#0000FF">string</span> FirstName { <span style="color:#0000FF">get</span>; <span style="color:#0000FF">set</span>; }
+
+    <span style="color:#0000FF">public</span> <span style="color:#0000FF">string</span> LastName { <span style="color:#0000FF">get</span>; <span style="color:#0000FF">set</span>; }
+  }
+}
+</code></pre>
+
+<ul>
+<li>Back in MaingPage.xaml, create a Click event handler for the RefreshButton.  Add the following code to MainPage.xaml.cs for the event handler:</li>
+</ul>
+
+<span class="codelanguage">C#</span><pre><code class="C#"><span style="color:#0000FF">private</span> <span style="color:#0000FF">void</span> RefreshButton_Click(<span style="color:#0000FF">object</span> sender, RoutedEventArgs e)
+{
+  RefreshData();
+}
+
+<span style="color:#0000FF">async</span> <span style="color:#0000FF">private</span> <span style="color:#0000FF">void</span> RefreshData()
+{
+  LoadingDataRing.IsActive = <span style="color:#0000FF">true</span>;
+  <span style="color:#0000FF">var</span> demoTable = App.MobileService.GetTable&lt;DemoTable&gt;();
+  <span style="color:#0000FF">var</span> query = demoTable.CreateQuery();
+  DemoTableListView.ItemsSource = <span style="color:#0000FF">await</span> query.ToListAsync();
+  LoadingDataRing.IsActive = <span style="color:#0000FF">false</span>;
+}
+</code></pre>
+
+<ul>
+<li>Next, add a click event handler to the InsertButton, and add the following code for it:</li>
+</ul>
+
+<span class="codelanguage">C#</span><pre><code class="C#"><span style="color:#0000FF">private</span> <span style="color:#0000FF">async</span> <span style="color:#0000FF">void</span> InsertButton_Click(<span style="color:#0000FF">object</span> sender, RoutedEventArgs e)
+{
+  DemoTable item = <span style="color:#0000FF">new</span> DemoTable
+  {
+    FirstName = FirstNameTextBox.Text,
+    LastName = LastNameTextBox.Text
+  };
+
+  LoadingDataRing.IsActive = <span style="color:#0000FF">true</span>;
+
+  <span style="color:#0000FF">await</span> App.MobileService.GetTable&lt;DemoTable&gt;().InsertAsync(item);
+
+  FirstNameTextBox.Text = <span style="color:#8B0000">&quot;&quot;</span>;
+  LastNameTextBox.Text = <span style="color:#8B0000">&quot;&quot;</span>;
+
+  RefreshData();
+}
+</code></pre>
+
+<p><a name="Summary"></a></p>
+
+<h2 id="Summary">Summary</h2>
+
+</div>
+</body>
+</html>

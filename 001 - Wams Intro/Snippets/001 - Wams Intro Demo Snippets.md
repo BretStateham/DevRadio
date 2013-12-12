@@ -15,6 +15,7 @@ Developers wishing to follow the demo steps need:
 <a name="resources" />
 ## Resources ##
 
+- [Bret's DevRadio Demos on GitHub](http://github.com/BretStateham/DevRadio)
 - [Azure Mobile Services Documentation](http://msdn.microsoft.com/en-us/library/windowsazure/jj554228.aspx)
 - [Windows Azure Mobile Services REST API Reference](http://msdn.microsoft.com/en-us/library/windowsazure/jj710108.aspx)
 - [Operations on a table in Mobile Services](http://msdn.microsoft.com/en-us/library/windowsazure/jj710104.aspx)
